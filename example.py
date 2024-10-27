@@ -2,8 +2,9 @@ from bk_asr import BcutASR, JianYingASR, KuaiShouASR
 
 
 if __name__ == '__main__':
-    audio_file = "resources/test.mp3"
-    asr = JianYingASR(audio_file)
+    #audio_file = "resources/test.mp3"
+    audio_file = 'F:/pythonlearn/女友录音文件需求分析/output.wav'
+    asr = BcutASR(audio_file)
     result = asr.run()
-    result.to_srt()
-    print(result.to_srt())
+    results = result.to_srt()
+    print(results)
